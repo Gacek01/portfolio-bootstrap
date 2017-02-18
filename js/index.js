@@ -8,13 +8,13 @@ $('a[href*="#"]:not([href="#"])').click(function () {
 //Efekt Nav-Bar Transparency
 $(window).scroll(function () {
 	if ($(window).scrollTop() > 71) {
-		$('#nav-section').css({
+		$('#main-nav').css({
 			"opacity": "1"
 			, "transition-duration": "2s"
 		})
 	}
 	else {
-		$('#nav-section').css({
+		$('#main-nav').css({
 			"opacity": "0.6"
 			, "transition-duration": "2s"
 		})

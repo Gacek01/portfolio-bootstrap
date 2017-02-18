@@ -6,21 +6,27 @@
 	<title>Moje Portfolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!--<link rel="stylesheet" href="css/responsive.css">-->
 </head>
 
 <body>
 	<!--Menu navigacyjne / Start-->
-	<nav id="nav-section">
-		<label for="menu-toggle">Menu</label>
-		<input type="checkbox" id="menu-toggle">
-		<ul id="menu">
-			<li class="menu-item"><a href="#about">o mnie</a></li>
-			<li class="menu-item"><a href="#skills">umiejetnosci</a></li>
-			<li class="menu-item"><a href="#portfolio">portfolio</a></li>
-			<li class="menu-item"><a href="#contact">kontakt</a></li>
-		</ul>
+	<nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			<div id="main-menu" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="#about">O mnie</a></li>
+					<li><a href="#skills">Umiejętności</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<!--Menu navigacyjne / Koniec-->
 	<!--Główny naglowek / Start-->
@@ -32,71 +38,76 @@
 	<!--Główny naglowek / Koniec-->
 	<!--Sekcja o mnie / Start-->
 	<section id="about">
-		<h2>O <span class="slowo">mnie</span></h2>
-		<div id="omnie-obrazek">
-			<figure><img src="img/jan-nowak.jpg" alt="my photo"></figure>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique temporibus vero, sint sit nesciunt explicabo quisquam omnis quaerat, iure quae minima velit nisi commodi! Amet, minima. Voluptatum, cumque, provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores labore vel ullam illo praesentium ipsum expedita inventore obcaecati, voluptatum cupiditate sequi, libero debitis, tempore dolores doloribus. Odio excepturi totam distinctio.</p>
+		<div class="container">
+			<div class="row">
+				<h2>O <span class="slowo">mnie</span></h2> </div>
+			<div id="omnie-obrazek" class="col-md-6">
+				<figure><img src="img/jan-nowak.jpg" alt="my photo" class="img-thumbnail"></figure>
+			</div>
+			<div id="omnie-opis" class="col-md-6">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique temporibus vero, sint sit nesciunt explicabo quisquam omnis quaerat, iure quae minima velit nisi commodi! Amet, minima. Voluptatum, cumque, provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores labore vel ullam illo praesentium ipsum expedita inventore obcaecati, voluptatum cupiditate sequi, libero debitis, tempore dolores doloribus. Odio excepturi totam distinctio.
+					<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consequuntur, beatae minima aut animi repellendus explicabo. Delectus repudiandae, ipsam fugit, repellendus quo, ab velit, temporibus sed amet ex quibusdam voluptas.</p>
+			</div>
 		</div>
-		<div id="omnie-opis"> </div>
 	</section>
 	<!--Sekcja o mnie / Koniec-->
 	<!--Sekcja Umiejetnosci / Start-->
 	<section id="skills">
-		<h2>Moje <span class="slowo">Umiejetnosci</span></h2>
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium qui cupiditate nemo ipsam natus eligendi reiciendis, id tenetur repellat velit! Sint officia deserunt omnis consequatur beatae molestiae delectus corrupti aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque qui quam sed culpa corrupti numquam dolor! Animi, consequatur quod voluptate dicta saepe corporis sapiente id error inventore labore recusandae expedita.</div>
+		<div class="container">
+			<div class="row">
+				<h2>Moje <span class="slowo">Umiejętności</span></h2> </div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium qui cupiditate nemo ipsam natus eligendi reiciendis, id tenetur repellat velit! Sint officia deserunt omnis consequatur beatae molestiae delectus corrupti aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque qui quam sed culpa corrupti numquam dolor! Animi, consequatur quod voluptate dicta saepe corporis sapiente id error inventore labore recusandae expedita.</div>
+		</div>
 	</section>
 	<br>
 	<section id="skillsphoto">
-		<figure class="ikonka"> <img src="icons/html5.png" alt="HTML">
-			<figcaption>HTML</figcaption>
-		</figure>
-		<figure class="ikonka"> <img src="icons/css3.png" alt="CSS3">
-			<figcaption>CSS3</figcaption>
-		</figure>
-		<figure class="ikonka"> <img src="icons/js.png" alt="JavaScript">
-			<figcaption>JavaScript</figcaption>
-		</figure>
-		<figure class="ikonka"> <img src="icons/jquery.png" alt="JQuery">
-			<figcaption>JQuery</figcaption>
-		</figure>
+		<div class="container">
+			<figure class="ikonka col-sm-6 col-lg-3"> <img src="icons/html5.png" alt="HTML">
+				<figcaption>HTML</figcaption>
+			</figure>
+			<figure class="ikonka col-sm-6 col-lg-3"> <img src="icons/css3.png" alt="CSS3">
+				<figcaption>CSS3</figcaption>
+			</figure>
+			<figure class="ikonka col-sm-6 col-lg-3 col-lg-3"> <img src="icons/js.png" alt="JavaScript">
+				<figcaption>JavaScript</figcaption>
+			</figure>
+			<figure class="ikonka col-sm-6 col-lg-3"> <img src="icons/jquery.png" alt="JQuery">
+				<figcaption>JQuery</figcaption>
+			</figure>
+		</div>
 	</section>
 	<br>
 	<!--Sekcja Umiejetnosci / Start-->
 	<!--Sekcja Portfolio / Start-->
 	<section id="portfolio">
-		<h2>Moje <span class="slowo">Portfolio</span></h2>
-		<div class="portfolio-item" id="portfolio-item1">
-			<div class="portfolio-item-mask">
-				<div class="portfolio-item-content">
-					<div class="portfolio-item-content-inner">
-						<h3>lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere aliquam facilis optio fugit tenetur, similique enim adipisci nam vero ducimus, quam eligendi nulla ut praesentium perspiciatis cumque totam veritatis.</p>
-						<h4>Wykorzystane technologie</h4>
-						<p>HTML, CSS3, JavaScript</p>
+		<div class="container-fluid">
+			<div class="row no-padding">
+				<h2>Moje <span class="slowo">Portfolio</span></h2>
+				<div class="portfolio-item col-sm-12 col-md-4" id="portfolio-item1">
+					<div class="portfolio-item-mask">
+						<div class="portfolio-item-content-inner">
+							<h3>lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere aliquam facilis optio fugit tenetur, similique enim adipisci nam vero ducimus, quam eligendi nulla ut praesentium perspiciatis cumque totam veritatis.</p>
+							<h4>Wykorzystane technologie</h4>
+							<p>HTML, CSS3, JavaScript</p> <i class="fa fa-link" aria-hidden="true"></i> </div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="portfolio-item" id="portfolio-item2">
-			<div class="portfolio-item-mask">
-				<div class="portfolio-item-content">
-					<div class="portfolio-item-content-inner">
-						<h3>lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere aliquam facilis optio fugit tenetur, similique enim adipisci nam vero ducimus, quam eligendi nulla ut praesentium perspiciatis cumque totam veritatis.</p>
-						<h4>Wykorzystane technologie</h4>
-						<p>HTML, CSS3, JavaScript</p>
+				<div class="portfolio-item col-sm-6 col-md-4" id="portfolio-item2">
+					<div class="portfolio-item-mask">
+						<div class="portfolio-item-content-inner">
+							<h3>lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere aliquam facilis optio fugit tenetur, similique enim adipisci nam vero ducimus, quam eligendi nulla ut praesentium perspiciatis cumque totam veritatis.</p>
+							<h4>Wykorzystane technologie</h4>
+							<p>HTML, CSS3, JavaScript</p> <i class="fa fa-link" aria-hidden="true"></i> </div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="portfolio-item" id="portfolio-item3">
-			<div class="portfolio-item-mask">
-				<div class="portfolio-item-content">
-					<div class="portfolio-item-content-inner">
-						<h3>lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere aliquam facilis optio fugit tenetur, similique enim adipisci nam vero ducimus, quam eligendi nulla ut praesentium perspiciatis cumque totam veritatis.</p>
-						<h4>Wykorzystane technologie</h4>
-						<p>HTML, CSS3, JavaScript</p>
+				<div class="portfolio-item col-sm-6 col-md-4" id="portfolio-item3">
+					<div class="portfolio-item-mask">
+						<div class="portfolio-item-content-inner">
+							<h3>lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere aliquam facilis optio fugit tenetur, similique enim adipisci nam vero ducimus, quam eligendi nulla ut praesentium perspiciatis cumque totam veritatis.</p>
+							<h4>Wykorzystane technologie</h4>
+							<p>HTML, CSS3, JavaScript</p> <i class="fa fa-link" aria-hidden="true"></i> </div>
 					</div>
 				</div>
 			</div>
@@ -104,25 +115,28 @@
 	</section>
 	<br>
 	<section id="contact">
-		<div class="col1-2">
-			<h2>Krzysztof <span class="slowo">Gagacki</span></h2> <address>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>Krzysztof <span class="slowo">Gagacki</span></h2> </div> <address>
 			ul. Mostowa 123<br>
 			60-123 Kraków<br><br>
 			tel: 123-123-123 <br>
 			Email: <a href="mailto:jn@gmail.com">jn@gmail.com</a>
 			</address>
-			<div class="social-icons"> <i class="fa fa-facebook"></i> <i class="fa fa-google-plus"></i> <i class="fa fa-twitter"></i> </div>
-		</div>
-		<div class="col1-2">
-			<form action "">
-				<input type="text" placeholder="Imie i nazwisko">
-				<br>
-				<input type="email" placeholder="E-mail">
-				<br>
-				<textarea type="message" cols="30" rows="10" placeholder="Treść wiadomości"> </textarea>
-				<br>
-				<input type="submit" value="Wyslij">
-				<br> </form>
+				<div class="social-icons"> <i class="fa fa-facebook"></i> <i class="fa fa-google-plus"></i> <i class="fa fa-twitter"></i> </div>
+			</div>
+			<div class="col-sm-6">
+				<form action "">
+					<input type="text" placeholder="Imie i nazwisko">
+					<br>
+					<input type="email" placeholder="E-mail">
+					<br>
+					<textarea type="message" cols="30" rows="10" placeholder="Treść wiadomości"> </textarea>
+					<br>
+					<input type="submit" value="Wyslij">
+					<br> </form>
+			</div>
 		</div>
 	</section>
 	<footer>
@@ -130,7 +144,9 @@
 	</footer>
 	<!--Sekcja Portfolio / Koniec-->
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/index.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
 
 </html>
