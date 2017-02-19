@@ -131,7 +131,6 @@ h2 {
 }
 
 div.portfolio-item {
-	display: inline-block;
 	height: 350px;
 	background-size: cover;
 	background-position: center;
